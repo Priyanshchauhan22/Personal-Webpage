@@ -82,10 +82,12 @@
   left: 0px;
   width: 100%;
   height: 100vh;
-  display: none;
+  display: flex;
   padding: 32px;
   z-index: 100;
   position: absolute;
+  transform: translateX(100%);
+  transition: 0.5s;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -120,20 +122,26 @@
 }
 .home-nav121 {
   margin-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
 }
 .home-nav221 {
   margin-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
 }
 .home-nav321 {
   margin-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
 }
 .home-nav421 {
   margin-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
 }
 .home-nav521 {
   margin-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
 }
 .home-buttons1 {
+  border: 2px dashed rgba(120, 120, 120, 0.4);
   display: flex;
   margin-top: var(--dl-space-space-unit);
   align-items: center;
@@ -261,7 +269,7 @@
 }
 .home-video {
   width: 1199px;
-  height: 445px;
+  height: 453px;
 }
 .home-separator {
   flex: 0 0 auto;
@@ -332,11 +340,10 @@
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
-  .home-desktop-menu {
-    display: none;
+  .home-links {
+    width: 426px;
   }
   .home-burger-menu {
-    display: flex;
     align-items: center;
     justify-content: center;
   }
@@ -367,6 +374,10 @@
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
+  .home-video {
+    width: 766px;
+    height: 451px;
+  }
   .home-separator {
     margin-top: var(--dl-space-space-oneandhalfunits);
     margin-left: 0px;
@@ -382,6 +393,13 @@
 @media(max-width: 479px) {
   .home-navbar-interactive {
     padding: var(--dl-space-space-unit);
+    padding-right: 16px;
+  }
+  .home-desktop-menu {
+    display: none;
+  }
+  .home-burger-menu {
+    display: flex;
   }
   .home-mobile-menu1 {
     padding: 16px;
@@ -394,6 +412,12 @@
   }
   .home-footer1 {
     padding: var(--dl-space-space-unit);
+    position: relative;
+  }
+  .home-video {
+    width: 478px;
+    height: 489px;
+    min-width: auto;
   }
   .home-separator {
     margin-top: var(--dl-space-space-oneandhalfunits);
