@@ -279,7 +279,7 @@
 }
 .teleport-show {
   display: flex !important;
-  transform: none !important;
+  transform: translateX(0%) !important;
 }
 .thq-input {
   color: var(--dl-color-theme-neutral-dark);
